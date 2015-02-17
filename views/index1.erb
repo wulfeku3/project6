@@ -1,0 +1,19 @@
+<h1>United States Holidays</h1>
+    
+  <div class="row">
+
+    <div class="col-sm-4">
+      <h3>June 1991's Holidays</h3>
+      <p><% @holidays.each do |holiday|%>
+        <li> <%= holiday[0]["name"] %> <%= holiday[0]["country"] %> <%= holiday[0]["date"] %> </li>
+        <% end %></p>
+    </div>
+
+    <div class="col-sm-8">
+      <h3>This Month's Holidays</h3>
+      <p><% @currents.each do |current|%>
+        <li> <%= current[0]["name"] %> <%= current[0]["country"] %> <%= current[0]["date"] %> </li>
+        <% end %></p>
+    </div>
+
+  </div>
